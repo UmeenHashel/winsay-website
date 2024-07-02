@@ -1,5 +1,6 @@
 import React from 'react';
 import "./header.css";
+import logoLight from '../../assets/logo_light.png';
 
 const nav_links = [
   {
@@ -34,7 +35,7 @@ const header = () => {
     <div className="container">
         <div className="nav_wrapper">
             <div className="logo">
-                <h2>Digency</h2> {/* Add the logo here */}
+              <img src={logoLight} alt="Winsay Logo" className="logo_image" /> 
             </div>
 
             <div className="navigation">

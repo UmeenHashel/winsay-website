@@ -10,6 +10,22 @@
     justify-content: space-between;
 }
 
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo_image {
+    width: 250px; 
+    height: auto;
+}
+
+.navigation {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+  }
+
 .menu{
     display: flex;
     align-items: center;
@@ -28,9 +44,6 @@
     color: var(--link-active);
 }
 
-.logo h2{
-    color: var(--primary-color);
-}
 
 .light_mode span{
     color: rgba(255, 255, 255, 0.637);
