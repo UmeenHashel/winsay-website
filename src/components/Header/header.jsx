@@ -1,5 +1,5 @@
 import React from 'react';
-import "./header.css";
+import "../../styles/header.css";
 import logoLight from '../../assets/logo_light.png';
 
 const nav_links = [
