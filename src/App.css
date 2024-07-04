@@ -78,8 +78,19 @@ h1, h2{
   color: var(--heading-color);
 }
 
+section{
+  padding: 60px 0px;
+  
+}
+
 .container{
   width: 1140px;
   padding: 0px 15px;
   margin: auto;
+}
+
+.description{
+  color: var(--small-text-color);
+  line-height: 30px;
+  font-size: .9rem;
 }
