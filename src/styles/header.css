@@ -16,14 +16,14 @@
 }
 
 .logo_image {
-    width: 150px; 
+    width: 150px;
     height: auto;
 }
 
 .navigation {
     flex: 1;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
   }
 
 .menu{
@@ -51,6 +51,12 @@
     align-items: center;
     column-gap: 0.4rem;
     font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.light-theme .light_mode span{
+    color: #000;
+    font-weight: 500;
 }
 
 .header_shrink{

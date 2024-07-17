@@ -1,8 +1,9 @@
 import React from 'react'
 import "../../styles/hero.css";
 import heroDarkImg from "../../assets/hero-img.png";
+import heroLightImg from "../../assets/light-hero-bg.jpg"
 
-const Hero = () => {
+const Hero = ({theme}) => {
   return (
     <section className='hero_section'>
         <div className="container">
@@ -13,7 +14,7 @@ const Hero = () => {
                     <h2>Digital Products To</h2>
                     <h2 className="highlight">Promote Your Brand</h2>
                   </div>
-                  <p className="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, itaque. 
+                  <p className="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, itaque.
                     Cum modi temporibus facere corporis, necessitatibus amet sint laborum recusandae.
                   </p>
 
@@ -24,7 +25,7 @@ const Hero = () => {
                 </div>
 
                 <div className="hero_img">
-                  <img src={heroDarkImg} alt="hero-img"/>
+                  <img src={ theme==='light-theme' ? heroLightImg : heroDarkImg} alt="hero-img"/>
                 </div>
             </div>
         </div>
