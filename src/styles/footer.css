@@ -12,9 +12,6 @@
     width: 40%;
 }
 
-.footer_logo h2{
-    color: var(--primary-color);
-}
 
 .small_text{
     font-size: 1rem;
@@ -60,4 +57,27 @@
 
 .light-theme .copyright{
     color: #555;
+}
+
+@media only screen and (max-width: 768px){
+    .footer_logo{
+        width: 50%;
+    }
+
+    .footer_wrapper{
+        flex-wrap: wrap;
+        column-gap: 1.5rem !important;
+        row-gap: 1.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 576px){
+    .footer_quick-links{
+        width: 46%;
+    }
+
+    .footer_logo{
+        width: 46%;
+    }
 }

@@ -28,7 +28,7 @@ function App() {
     <Services/>
     <About/>
     <Team/>
-    <Footer/>
+    <Footer theme={theme}/>
   </>
   )
 }

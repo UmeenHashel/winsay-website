@@ -30,6 +30,8 @@ const Header = ({ theme, toggleTheme }) => {
 
   const headerRef = useRef(null);
 
+  const menuRef = useRef(null)
+
   const headerFunc = () => {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
       headerRef.current.classList.add('header_shrink');
@@ -56,7 +58,9 @@ const Header = ({ theme, toggleTheme }) => {
       top: location - 80,
     });
 
-  }
+  };
+
+  const toggleMenu = ()=> menuRef.current.classList.toggle('menu_active')
 
   return (
     <header className='header' ref={headerRef}>
@@ -66,7 +70,7 @@ const Header = ({ theme, toggleTheme }) => {
             <img src={theme === 'light-theme' ? logoDark : logoLight} alt="Winsay Logo" className="logo_image" />
           </div>
 
-          <div className="navigation">
+          <div className="navigation" ref={menuRef} onClick={toggleMenu}>
             <ul className="menu">
               {
                 nav_links.map((item, index) => (
@@ -75,6 +79,7 @@ const Header = ({ theme, toggleTheme }) => {
               }
             </ul>
           </div>
+
           <div className="light_mode">
             <span onClick={toggleTheme}>
               {theme === 'light-theme' ? (
@@ -88,6 +93,9 @@ const Header = ({ theme, toggleTheme }) => {
               )}
             </span>
           </div>
+
+          <span className="mobile_menu" onClick={toggleMenu}><i class="ri-menu-line"></i></span>
+
         </div>
       </div>
     </header>

@@ -1,5 +1,7 @@
 import React from 'react'
 import "../../styles/footer.css";
+import logoLight from '../../assets/logo_light.png';
+import logoDark from '../../assets/logo_dark.png';
 
 const quickLinks01 =[
     {
@@ -46,14 +48,14 @@ const quickLinks03 =[
     },
 ]
 
-const Footer = () => {
+const Footer = ({theme}) => {
     const year = new Date().getFullYear();
   return (
     <footer className="footer">
         <div className="container">
             <div className="footer_wrapper">
                 <div className="footer_logo">
-                    <h2>Digency</h2>
+                    <img src={theme === 'light-theme' ? logoDark : logoLight} alt="Winsay Logo" className="logo_image" />
                     <p className="description">Grow with us</p>
 
                     <p className="small_text description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus molestias unde quaerat nobis numquam dolor. Voluptatem soluta iure nulla adipisci.</p>
