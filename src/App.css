@@ -61,6 +61,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 
@@ -106,9 +107,13 @@ section{
 .light-theme .secondary_btn{
   border: 1px solid var(--primary-color);
   color: #090238;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .light-theme a{
   font-weight: 500;
+}
+
+.light-theme .team_img{
+  background: #ddd;
 }
