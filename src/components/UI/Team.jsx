@@ -31,7 +31,7 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <section className='our_team'>
+    <section id="team">
         <div className="container">
             <div className="team_content">
                 <h6 className="subtitle">Our Team</h6>
@@ -43,7 +43,7 @@ const Team = () => {
             <div className="team_wrapper">
                 {
                     teamMembers.map((item,index) =>(
-                        <div className="team_item">
+                        <div className="team_item" key={index}>
                             <div className="team_img">
                                 <img src={item.imgUrl} alt="teamMember" />
                             </div>

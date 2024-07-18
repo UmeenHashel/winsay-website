@@ -61,6 +61,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 
@@ -101,4 +102,30 @@ section{
   color: var(--primary-color);
   font-weight: 400;
   margin-bottom: 20px;
+}
+
+.light-theme .secondary_btn{
+  border: 1px solid var(--primary-color);
+  color: #090238;
+  font-weight: 600;
+}
+
+.light-theme a{
+  font-weight: 500;
+}
+
+.light-theme .team_img{
+  background: #ddd;
+}
+
+@media only screen and (max-width:1024px) {
+  .container{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  section {
+    padding: 40px 0px;
+  }
 }
